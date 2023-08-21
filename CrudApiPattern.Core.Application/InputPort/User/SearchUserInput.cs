@@ -6,6 +6,8 @@ namespace CrudApiPattern.Core.Application.InputPort.User
     public class SearchUserInput
     {
         public int? Id { get; set; }
-        // public PaginationInput Pagination { get; set; }
+        public int? Familia { get; set; }
+        public string? Nome { get; set; }
+        public PaginationInput Pagination { get; set; }
     }
 }
