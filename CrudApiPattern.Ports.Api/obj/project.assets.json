@@ -89,6 +89,20 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "CrudApiPattern.Adapters.LocalDb/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CrudApiPattern.Core.Application": "1.0.0",
+          "CrudApiPattern.Database.MockedDb": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CrudApiPattern.Adapters.LocalDb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CrudApiPattern.Adapters.LocalDb.dll": {}
+        }
+      },
       "CrudApiPattern.Core.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -97,6 +111,16 @@
         },
         "runtime": {
           "bin/placeholder/CrudApiPattern.Core.Application.dll": {}
+        }
+      },
+      "CrudApiPattern.Database.MockedDb/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CrudApiPattern.Database.MockedDb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CrudApiPattern.Database.MockedDb.dll": {}
         }
       }
     }
@@ -440,15 +464,27 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
+    "CrudApiPattern.Adapters.LocalDb/1.0.0": {
+      "type": "project",
+      "path": "../CrudApiPattern.Adapters.LocalDb/CrudApiPattern.Adapters.LocalDb.csproj",
+      "msbuildProject": "../CrudApiPattern.Adapters.LocalDb/CrudApiPattern.Adapters.LocalDb.csproj"
+    },
     "CrudApiPattern.Core.Application/1.0.0": {
       "type": "project",
       "path": "../CrudApiPattern.Core.Application/CrudApiPattern.Core.Application.csproj",
       "msbuildProject": "../CrudApiPattern.Core.Application/CrudApiPattern.Core.Application.csproj"
+    },
+    "CrudApiPattern.Database.MockedDb/1.0.0": {
+      "type": "project",
+      "path": "../CrudApiPattern.Database.MockedDb/CrudApiPattern.Database.MockedDb.csproj",
+      "msbuildProject": "../CrudApiPattern.Database.MockedDb/CrudApiPattern.Database.MockedDb.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CrudApiPattern.Adapters.LocalDb >= 1.0.0",
       "CrudApiPattern.Core.Application >= 1.0.0",
+      "CrudApiPattern.Database.MockedDb >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -479,8 +515,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Usuario\\source\\repos\\CrudApiPattern\\CrudApiPattern.Adapters.LocalDb\\CrudApiPattern.Adapters.LocalDb.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\source\\repos\\CrudApiPattern\\CrudApiPattern.Adapters.LocalDb\\CrudApiPattern.Adapters.LocalDb.csproj"
+            },
             "C:\\Users\\Usuario\\source\\repos\\CrudApiPattern\\CrudApiPattern.Core.Application\\CrudApiPattern.Core.Application.csproj": {
               "projectPath": "C:\\Users\\Usuario\\source\\repos\\CrudApiPattern\\CrudApiPattern.Core.Application\\CrudApiPattern.Core.Application.csproj"
+            },
+            "C:\\Users\\Usuario\\source\\repos\\CrudApiPattern\\CrudApiPattern.Database.MockedDb\\CrudApiPattern.Database.MockedDb.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\source\\repos\\CrudApiPattern\\CrudApiPattern.Database.MockedDb\\CrudApiPattern.Database.MockedDb.csproj"
             }
           }
         }

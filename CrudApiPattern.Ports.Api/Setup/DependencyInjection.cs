@@ -1,4 +1,7 @@
-﻿using CrudApiPattern.Core.Application.UseCases.User;
+﻿using CrudApiPattern.Adapters.LocalDb.Repository.ReadOnly;
+using CrudApiPattern.Core.Application.Abstractions.Read;
+using CrudApiPattern.Core.Application.UseCases.User;
+using CrudApiPattern.Database.MockedDb.MockedDb;
 
 namespace CrudApiPattern.Ports.Api.Setup
 {
@@ -12,8 +15,10 @@ namespace CrudApiPattern.Ports.Api.Setup
             services.AddScoped<ISearchUserPaged, SearchUserPaged>();
 
             // Abstractions
+            services.AddScoped<IUserReadOnly, UserRepository>();
 
             // Others
+            services.AddScoped<IMockedDataBase, MockedDataBase>();
 
             ServiceProvider = services.BuildServiceProvider();
         }

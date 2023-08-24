@@ -1,5 +1,4 @@
 ﻿using CrudApiPattern.Core.Application.InputPort.User;
-using CrudApiPattern.Core.Application.OutputPort.User;
 using CrudApiPattern.Core.Application.UseCases.User;
 using Microsoft.AspNetCore.Mvc;
 

@@ -5,11 +5,19 @@ VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ports", "Ports", "{4C0EA466-2F52-44FE-A7C0-3EDA7F77F9B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudApiPattern.Ports.Api", "CrudApiPattern.Ports.Api\CrudApiPattern.Ports.Api.csproj", "{4C03F5E7-7E84-400B-953B-FF1A75F23AD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrudApiPattern.Ports.Api", "CrudApiPattern.Ports.Api\CrudApiPattern.Ports.Api.csproj", "{4C03F5E7-7E84-400B-953B-FF1A75F23AD5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{74C313E0-FB7C-4543-9AA5-4621D911187D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudApiPattern.Core.Application", "CrudApiPattern.Core.Application\CrudApiPattern.Core.Application.csproj", "{5CF78C7C-C8C4-443D-8898-355E80940C17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrudApiPattern.Core.Application", "CrudApiPattern.Core.Application\CrudApiPattern.Core.Application.csproj", "{5CF78C7C-C8C4-443D-8898-355E80940C17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{545D145B-0A50-4A79-B65F-641C40D587C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudApiPattern.Adapters.LocalDb", "CrudApiPattern.Adapters.LocalDb\CrudApiPattern.Adapters.LocalDb.csproj", "{F8C6637D-B231-429D-BF15-F55ECD9A3B6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Database", "0-Database", "{6E0C70F7-B2E3-4B00-9D26-212BDE6C5EB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudApiPattern.Database.MockedDb", "CrudApiPattern.Database.MockedDb\CrudApiPattern.Database.MockedDb.csproj", "{D6A10F3B-4790-46EB-9555-83A5BA59ED8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +33,14 @@ Global
 		{5CF78C7C-C8C4-443D-8898-355E80940C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CF78C7C-C8C4-443D-8898-355E80940C17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CF78C7C-C8C4-443D-8898-355E80940C17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8C6637D-B231-429D-BF15-F55ECD9A3B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8C6637D-B231-429D-BF15-F55ECD9A3B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8C6637D-B231-429D-BF15-F55ECD9A3B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8C6637D-B231-429D-BF15-F55ECD9A3B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6A10F3B-4790-46EB-9555-83A5BA59ED8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6A10F3B-4790-46EB-9555-83A5BA59ED8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6A10F3B-4790-46EB-9555-83A5BA59ED8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6A10F3B-4790-46EB-9555-83A5BA59ED8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +48,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4C03F5E7-7E84-400B-953B-FF1A75F23AD5} = {4C0EA466-2F52-44FE-A7C0-3EDA7F77F9B5}
 		{5CF78C7C-C8C4-443D-8898-355E80940C17} = {74C313E0-FB7C-4543-9AA5-4621D911187D}
+		{F8C6637D-B231-429D-BF15-F55ECD9A3B6B} = {545D145B-0A50-4A79-B65F-641C40D587C4}
+		{D6A10F3B-4790-46EB-9555-83A5BA59ED8A} = {6E0C70F7-B2E3-4B00-9D26-212BDE6C5EB6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1CFA35DF-2EBF-4168-8D90-CF4A4A7F3F0B}

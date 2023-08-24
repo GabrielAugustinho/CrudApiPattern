@@ -32,3 +32,7 @@ C:\Users\Usuario\source\repos\CrudApiPattern\CrudApiPattern.Ports.Api\obj\Debug\
 C:\Users\Usuario\source\repos\CrudApiPattern\CrudApiPattern.Ports.Api\obj\Debug\net6.0\ref\CrudApiPattern.Ports.Api.dll
 C:\Users\Usuario\source\repos\CrudApiPattern\CrudApiPattern.Ports.Api\bin\Debug\net6.0\CrudApiPattern.Core.Application.dll
 C:\Users\Usuario\source\repos\CrudApiPattern\CrudApiPattern.Ports.Api\bin\Debug\net6.0\CrudApiPattern.Core.Application.pdb
+C:\Users\Usuario\source\repos\CrudApiPattern\CrudApiPattern.Ports.Api\bin\Debug\net6.0\CrudApiPattern.Adapters.LocalDb.dll
+C:\Users\Usuario\source\repos\CrudApiPattern\CrudApiPattern.Ports.Api\bin\Debug\net6.0\CrudApiPattern.Database.MockedDb.dll
+C:\Users\Usuario\source\repos\CrudApiPattern\CrudApiPattern.Ports.Api\bin\Debug\net6.0\CrudApiPattern.Adapters.LocalDb.pdb
+C:\Users\Usuario\source\repos\CrudApiPattern\CrudApiPattern.Ports.Api\bin\Debug\net6.0\CrudApiPattern.Database.MockedDb.pdb

@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v6.0": {
       "CrudApiPattern.Ports.Api/1.0.0": {
         "dependencies": {
+          "CrudApiPattern.Adapters.LocalDb": "1.0.0",
           "CrudApiPattern.Core.Application": "1.0.0",
+          "CrudApiPattern.Database.MockedDb": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
@@ -62,9 +64,23 @@
           }
         }
       },
+      "CrudApiPattern.Adapters.LocalDb/1.0.0": {
+        "dependencies": {
+          "CrudApiPattern.Core.Application": "1.0.0",
+          "CrudApiPattern.Database.MockedDb": "1.0.0"
+        },
+        "runtime": {
+          "CrudApiPattern.Adapters.LocalDb.dll": {}
+        }
+      },
       "CrudApiPattern.Core.Application/1.0.0": {
         "runtime": {
           "CrudApiPattern.Core.Application.dll": {}
+        }
+      },
+      "CrudApiPattern.Database.MockedDb/1.0.0": {
+        "runtime": {
+          "CrudApiPattern.Database.MockedDb.dll": {}
         }
       }
     }
@@ -117,7 +133,17 @@
       "path": "swashbuckle.aspnetcore.swaggerui/6.5.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
     },
+    "CrudApiPattern.Adapters.LocalDb/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "CrudApiPattern.Core.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrudApiPattern.Database.MockedDb/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
