@@ -3,9 +3,11 @@ using CrudApiPattern.Core.Application.Abstractions.Read;
 using CrudApiPattern.Core.Application.InputPort.User;
 using CrudApiPattern.Core.Application.OutputPort.User;
 using CrudApiPattern.Database.MockedDb.MockedDb;
+using System.Diagnostics.CodeAnalysis;
 
 namespace CrudApiPattern.Adapters.LocalDb.Repository.ReadOnly
 {
+    [ExcludeFromCodeCoverage]
     public class UserRepository : IUserReadOnly
     {
         private readonly IMockedDataBase _mockedDataBase;
@@ -21,7 +23,7 @@ namespace CrudApiPattern.Adapters.LocalDb.Repository.ReadOnly
             {
                 var result = _mockedDataBase.ExecuteGetQuery(id: input.Id, family: input.Familia, name: input.Nome);
                 var userDto = new List<UserDto>();
-                
+
                 foreach (var user in result)
                     userDto.Add((UserDto)user);
 

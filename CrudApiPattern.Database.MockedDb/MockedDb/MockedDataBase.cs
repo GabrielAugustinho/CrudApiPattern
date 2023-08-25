@@ -2,6 +2,7 @@
 
 namespace CrudApiPattern.Database.MockedDb.MockedDb
 {
+    [ExcludeFromCodeCoverage]
     public class MockedDataBase : IMockedDataBase
     {
         private List<UserEntity> users;
